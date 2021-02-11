@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://webcode.rf.gd/$1 [R,L]
+RewriteRule ^public/(.*)$ index.php?id=$1 [L]
