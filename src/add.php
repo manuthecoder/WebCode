@@ -1,9 +1,9 @@
 <?php
 $available_id = null;
-$servername = "sql104.epizy.com";
-$username = "epiz_27081301";
-$password = "oGM667NEMc";
-$dbname = "epiz_27081301_WEB_CODE_IDE_DO_NOT_DELETE_THIS_EVER_IN_YOUR_LIFE";
+$servername = "OMMITED";
+$username = "OMMITED";
+$password = "OMMITED";
+$dbname = "OMMITED";
 $id = $_GET['id'];
 try {
     $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
