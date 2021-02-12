@@ -1,0 +1,24 @@
+<style>
+.msg {
+    padding: 10px;
+    box-shadow: 0 0 10px #eee;
+    margin: 10px
+}
+.new {
+animation: new 1s forwards
+}
+@keyframes new {
+    0% {
+        background: rgba(255,0,0,.1);
+    }
+}
+</style>
+<button onclick="doit();">Click me</button>
+<div id="console"></div>
+<script>
+window.onerror = function(msg, url, linenumber) {
+    //document.write('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+    document.getElementById("console").insertAdjacentHTML("beforeend", '<div class="new msg">'+msg+ '<br> Line Number: '+linenumber + "<br></div>");
+    return true;
+}
+</script>
